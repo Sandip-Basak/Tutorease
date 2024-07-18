@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+<title>Tutorease</title>
+</head>
+<body>
+    <h2 class="card-title fw-bold text-center mt-2">Written Mock Test</h2>
+    <div class="w-100 p-3 d-inline-flex">
+        <div class="w-50 fw-bold">
+            Total Marks - {{ total_marks }}
+        </div>
+        <div class="w-50 fw-bold float-right text-end" id="timer">
+            Time Left - {{ time }}:00
+        </div>
+    </div>
+    <div class="w-100 p-3">
+        <iframe src="/media/{{ written_mock.question_paper }}" width="100%" height="600px"></iframe>
+    </div>
+
+    <div class="p-3 border-top border-3">
+        <form method="post" action="/writtenmockresult" enctype="multipart/form-data" class="mt-4">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="fileUpload">Upload File:</label>
+                <input type="file" class="form-control-file" id="fileUpload" name="upload" required>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+        </form>
+    </div>
+        
+
+    <script>
+        window.onload = function() {
+  // Set the timer duration in seconds
+  var timerDuration = {{ time }}; // 30 minutes
+  timerDuration=timerDuration*60;
+
+  // Get the timer element
+  var timerElement = document.getElementById('timer');
+
+  // Start the countdown
+  var timer = setInterval(function() {
+    // Calculate minutes and seconds
+    var minutes = Math.floor(timerDuration / 60);
+    var seconds = timerDuration % 60;
+
+    // Display the time
+    timerElement.textContent = "Time Left - " + minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+
+    // Decrease timer duration
+    timerDuration--;
+
+    // Check if time is up
+    if (timerDuration < 0) {
+      // Submit the exam
+      submitAnswers();
+      // Stop the timer
+      clearInterval(timer);
+    }
+  }, 1000); // Update timer every second
+};
+
+function submitAnswers(){
+    location.assign(`/writtenmockresult?d=failed`)
+}
+
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

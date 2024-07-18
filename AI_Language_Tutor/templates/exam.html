@@ -1,0 +1,2282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- BOX ICONS CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/css/exam.css" />
+  <title>Tutorease</title>
+
+
+
+
+
+
+
+
+
+
+    <!--Google Adsense -->
+    <!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1590076256823196"-->
+    <!-- crossorigin="anonymous"></script>-->
+
+
+
+
+
+
+
+
+
+
+  <style>
+    @import "https://fonts.googleapis.com/css? family=Poppins:300,400,500,600,700";
+
+    .bg-turbo-yellow {
+      background-color: #ffcc19;
+    }
+
+    .bg-turbo-yellow-10 {
+      background-color: #fff9e5;
+    }
+
+    .bg-turbo-yellow-20 {
+      background-color: #ffeeb2;
+    }
+
+    .bg-turbo-yellow-30 {
+      background-color: #ffe37f;
+    }
+
+    .bg-turbo-yellow-40 {
+      background-color: #ffd74c;
+    }
+
+    .bg-turbo-yellow-50 {
+      background-color: #ffcc19;
+    }
+
+    .bg-turbo-yellow-60 {
+      background-color: #e5b200;
+    }
+
+    .bg-turbo-yellow-70 {
+      background-color: #b28b00;
+    }
+
+    .bg-turbo-yellow-80 {
+      background-color: #7f6300;
+    }
+
+    .bg-turbo-yellow-90 {
+      background-color: #4c3b00;
+    }
+
+    a,
+    a:hover,
+    a:focus {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .navbar {
+      padding: 15px 10px;
+      background: #fff;
+      border: none;
+      border-radius: 0;
+      /* margin-bottom: 40px; */
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-btn {
+      box-shadow: none;
+      outline: none !important;
+      border: none;
+    }
+
+    .line {
+      width: 100%;
+      height: 1px;
+      border-bottom: 1px dashed #ddd;
+      margin: 40px 0;
+    }
+
+    /* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+    .text-sidebar {
+      color: #6b6b6b;
+    }
+
+    .wrapper {
+      display: flex;
+      width: 100%;
+      align-items: stretch;
+    }
+
+    #sidebar {
+      min-width: 250px;
+      max-width: 250px;
+      background: white;
+      color: #6b6b6b;
+      transition: all 0.3s;
+      z-index: 1;
+    }
+
+    #sidebar.active {
+      margin-left: -250px;
+    }
+
+    #sidebar .sidebar-header {
+      padding: 20px;
+      background: white;
+    }
+
+    #sidebar ul.components {
+      padding: 20px 0;
+      border-bottom: 1px solid #b28b00;
+    }
+
+    #sidebar ul p {
+      color: #6b6b6b;
+      padding: 10px;
+    }
+
+    #sidebar ul li a {
+      padding: 10px;
+      font-size: 1.1em;
+      display: block;
+    }
+
+    #sidebar ul li a:hover {
+      color: #ffcc19;
+      background: #6b6b6b;
+    }
+
+    #sidebar ul li.active>a,
+    a[aria-expanded="true"] {
+      color: #6b6b6b;
+      background: #e5b200;
+    }
+
+    a[data-toggle="collapse"] {
+      position: relative;
+    }
+
+    .dropdown-toggle::after {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+
+    ul ul a {
+      font-size: 0.9em !important;
+      padding-left: 30px !important;
+      background: #e5b200;
+    }
+
+    ul.CTAs {
+      padding: 20px;
+    }
+
+    ul.CTAs a {
+      text-align: center;
+      font-size: 0.9em !important;
+      display: block;
+      border-radius: 5px;
+      margin-bottom: 5px;
+    }
+
+    a.download {
+      background: #6b6b6b;
+      color: #ffcc19;
+    }
+
+    a.article,
+    a.article:hover {
+      background: #e5b200 !important;
+      color: #6b6b6b !important;
+    }
+
+    /* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+    #content {
+      width: 100%;
+      padding: 20px;
+      min-height: 100vh;
+      transition: all 0.3s;
+    }
+
+    /* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+    @media (max-width: 768px) {
+      #sidebar {
+        margin-left: -250px;
+      }
+
+      #sidebar.active {
+        margin-left: 0;
+      }
+
+      #sidebarCollapse span {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+  <div id="full_scrn" class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar" class="border border-2">
+      <div class="sidebar-header ">
+        <h4>Questions</h4>
+      </div>
+      <ul id="questionList" class="list-group"></ul>
+      </ul>
+    </nav>
+    <!-- Page Content  -->
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent-custom">
+            <div class="container-fluid">
+              <button type="button" id="sidebarCollapse" class="btn text-sidebar border border-2">
+                <i id="collapseIcon" class="fas fa-solid fa-bars"></i>
+                <span></span>
+              </button>
+              <!-- Display the timer -->
+
+                <div id="timer">Time Left - {{ time }}:00</div>
+            </div>
+          </nav>
+
+
+
+
+
+
+
+      <div id="main_main">
+        {% if messages %} {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+          <strong> {{ message }} </strong>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </div>
+      {% endfor %} {% endif %}
+
+
+
+
+      <div class="col-md-9 m-auto">
+        <div class="main-content">
+            <div id="question" class="question"></div>
+            <div id="options" class="options"></div>
+            <button id="prevBtn" class="btn btn-primary m-1" onclick="prevQuestion()">Previous</button>
+            <button id="nextBtn" class="btn btn-primary m-1" onclick="nextQuestion()">Next</button>
+        </div>
+    </div>
+
+
+
+    </div>
+  </div>
+
+
+
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+      var sidebarCollapse = document.getElementById('sidebarCollapse');
+      var sidebar = document.getElementById('sidebar');
+      var collapseIcon = document.getElementById('collapseIcon');
+
+      sidebarCollapse.addEventListener('click', function () {
+        sidebar.classList.toggle('active');
+      });
+    });
+
+
+
+    window.onload = function() {
+  // Set the timer duration in seconds
+  var timerDuration = {{ time }}; // 30 minutes
+  timerDuration=timerDuration*60;
+
+  // Get the timer element
+  var timerElement = document.getElementById('timer');
+
+  // Start the countdown
+  var timer = setInterval(function() {
+    // Calculate minutes and seconds
+    var minutes = Math.floor(timerDuration / 60);
+    var seconds = timerDuration % 60;
+
+    // Display the time
+    timerElement.textContent = "Time Left - " + minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+
+    // Decrease timer duration
+    timerDuration--;
+
+    // Check if time is up
+    if (timerDuration < 0) {
+      // Submit the exam
+      submitAnswers();
+      // Stop the timer
+      clearInterval(timer);
+    }
+  }, 1000); // Update timer every second
+};
+
+
+
+
+    data = [
+        {% for p in mcq2 %}
+    {
+        type: "image-question",
+        question: "{{ p.question }}",
+        image: "media/{{ p.img_link }}",
+        options: ["{{ p.option1 }}", "{{ p.option2 }}", "{{ p.option3 }}", "{{ p.option4 }}"],
+        correctAnswer: parseInt("{{ p.answer }}"),
+        marks:{{ p.marks }}
+    },
+    {% endfor %}
+    {% for p in mcq1 %}
+    {
+        type: "image-options",
+        question: "{{ p.question }}",
+        options: [["media/{{ p.option1_link }}","{{ p.option1 }}"], ["media/{{ p.option2_link }}","{{ p.option2 }}"], ["media/{{ p.option3_link }}","{{ p.option3 }}"], ["media/{{ p.option4_link }}","{{ p.option4 }}"]],
+        correctAnswer: parseInt("{{ p.answer }}"),
+        marks:{{ p.marks }}
+    },
+    {% endfor %}
+    {% for p in mcq3 %}
+    {
+        type: "text-question",
+        question: "{{ p.question }}",
+        options: ["{{ p.option1 }}", "{{ p.option2 }}", "{{ p.option3 }}", "{{ p.option4 }}"],
+        correctAnswer: parseInt("{{ p.answer }}"),
+        marks:{{ p.marks }}
+    },
+    {% endfor %}
+];
+
+
+let currentQuestionIndex = 0;
+
+const questions=shuffle(data);
+
+
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+
+    // While there remain elements to shuffle...
+    while (currentIndex !== 0) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+}
+
+function renderQuestion() {
+    const questionContainer = $("#question");
+    const optionsContainer = $("#options");
+    const question = questions[currentQuestionIndex];
+
+    questionContainer.html(`<h2>Question ${currentQuestionIndex + 1}</h2><p>${question.question}</p>`);
+
+    optionsContainer.html(""); // Clear options container before appending new options
+
+    if (question.type === "image-question") {
+        questionContainer.append(`<img src="${question.image}" alt="Question Image" class="img-fluid">`);
+        // Display options if available
+        if (question.options) {
+            question.options.forEach((option, index) => {
+                optionsContainer.append(`
+                    <label class="option mt-1 mb-1">
+                        <input type="radio" name="option" value="${index}" ${question.answer === index ? 'checked' : ''}>
+                        ${option}
+                    </label><br>`);
+            });
+        }
+    } else if (question.type === "image-options") {
+        question.options.forEach((option, index) => {
+            optionsContainer.append(`
+                <label class="option text-center">
+                    <input type="radio" name="option" value="${index}" ${question.answer === index ? 'checked' : ''}>
+                    <img src="${option[0]}" alt="Option Image" class="img-thumbnail" width=200px height=200px>
+                    <br>
+                    ${option[1]}
+                </label>`);
+        });
+    } else if (question.type === "text-question") {
+        question.options.forEach((option, index) => {
+            optionsContainer.append(`
+                <label class="option mt-1 mb-1">
+                    <input type="radio" name="option" value="${index}" ${question.answer === index ? 'checked' : ''}>
+                    ${option}
+                </label><br>`);
+        });
+    }
+
+    // Check if it's the final question
+    var button = document.getElementById("nextBtn");
+    if (currentQuestionIndex === questions.length - 1) {
+        // Add submit button
+        button.textContent = "Submit";
+    }else{
+        button.textContent = "Next";
+
+    }
+
+    updateSidebar();
+}
+
+function submitAnswers() {
+    // Calculate score
+    let score = 0;
+    questions.forEach(question => {
+        if (question.hasOwnProperty("answer") && question.answer === question.correctAnswer) {
+            score+=question.marks;
+        }
+    });
+    is_finish_exam=true;
+
+    {% if data_save %}
+
+    Data_Updated(score);
+
+    {% endif %}
+
+
+    // Display score
+    var div = document.getElementById("full_scrn");
+      div.style.display="block";
+      div.innerHTML = `<h3 class="fw-bold text-center mt-5">Your score is ${score} out of {{ total_marks }}</h3>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center m-auto mt-5">
+            <button type="button" class="btn btn-danger text-center text-white fw-bold"> <a href="/home"
+                    style="text-decoration: none;color: aliceblue;">Go to Home</a></button><div>`;
+}
+
+{% if data_save %}
+async function Data_Updated(score){
+  const response=await fetch(`/examresult?d=${score}`)
+  const data=await response.json()
+  console.log(data["Data_Updated"])
+}
+{% endif %}
+
+
+
+function updateSidebar() {
+    const sidebarList = $("#questionList");
+    sidebarList.html("");
+
+    questions.forEach((question, index) => {
+        const listItem = $("<li>").addClass("list-group-item").text(`Question ${index + 1}`);
+        if (index === currentQuestionIndex) {
+            listItem.addClass("active");
+        }
+        if (question.hasOwnProperty("answer")) {
+            listItem.addClass("list-group-item-success"); // Green color for answered questions
+        }
+        listItem.click(() => {
+            currentQuestionIndex = index;
+            renderQuestion();
+        });
+        sidebarList.append(listItem);
+    });
+}
+
+function nextQuestion() {
+    const selectedOption = $('input[name="option"]:checked');
+    if (selectedOption.length > 0) {
+        questions[currentQuestionIndex].answer = parseInt(selectedOption.val());
+    }
+    if (currentQuestionIndex < questions.length - 1) {
+        currentQuestionIndex++;
+        renderQuestion();
+    }
+    else if (currentQuestionIndex === questions.length - 1){
+        submitAnswers();
+    }
+}
+
+function prevQuestion() {
+    if (currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        renderQuestion();
+    }
+}
+
+$(document).ready(function() {
+    renderQuestion();
+});
+
+
+
+
+
+
+
+
+
+// Disable right-click
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    alert("Right-click is disabled on this page for security purposes.");
+});
+
+// Disable Ctrl + U
+document.addEventListener('keydown', function(e) {
+    if (e.ctrlKey && e.keyCode === 85) {
+        e.preventDefault();
+        alert("View Page Source is disabled on this page.");
+    }
+});
+
+var left_screen=0;
+var is_finish_exam=false;
+document.addEventListener("visibilitychange", function() {
+  if (document.visibilityState === 'hidden') {
+    // User has switched tabs or minimized the window
+    if(left_screen<3 && !is_finish_exam){
+      alert("Warning! leaving the window during exam may terminate it.");
+    }
+    left_screen++;
+    // You can perform further actions here, like pausing a video or showing a warning
+  } else {
+    // User has returned to the tab
+    if (left_screen>3){
+      is_finish_exam=true;
+
+      // Sending results to backend
+      {% if data_save %}
+      Data_Updated(0);
+      {% endif %}
+
+      var div = document.getElementById("full_scrn");
+      div.style.display="block";
+      div.innerHTML = `<h3 class="fw-bold text-center mt-5">Your exam is terminated</h3>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center m-auto mt-5">
+            <button type="button" class="btn btn-danger text-center text-white fw-bold"> <a href="/home"
+                    style="text-decoration: none;color: aliceblue;">Go to Home</a></button><div>`;
+    }
+    // You can resume any paused activities or reset any warnings
+  }
+});
+
+
+  </script>
+
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    .para {
+      font-size: 25px;
+    }
+
+    .bg-transparent-custom {
+      box-shadow: none;
+      background-color: transparent !important;
+      border-radius: 20px !important;
+    }
+
+    /* @media (max-width: 650px) {
+    #sidebar {
+      margin-left: -250px;
+    }
+
+    #sidebar.active {
+      margin-left: 0;
+    }
+
+    #sidebarCollapse span {
+      display: none;
+    }
+  } */
+
+    @media screen and (max-width: 1289px) and (min-width: 1000px) {
+      body {
+        min-height: 100vh;
+      }
+
+      .side-navbar {
+        width: 220px;
+        height: 100%;
+        position: fixed;
+        margin-left: -300px;
+        background-color: #ececec;
+        transition: 0.5s;
+      }
+
+      .my-container {
+        transition: 0.4s;
+      }
+
+      .active-nav {
+        margin-left: 0;
+      }
+
+      /* for main section */
+      .active-cont {
+        margin-left: 250px;
+      }
+
+      #menu-btn {
+        background-color: #000000;
+        color: #fff;
+        margin-left: -45px;
+      }
+
+      .my-container input {
+        border-radius: 2rem;
+        padding: 2px 20px;
+      }
+
+      .btn-group button {
+        padding: 15px 20px;
+        /* Adjust padding to increase button size */
+        font-size: 18px;
+        /* Adjust font size as needed */
+        transition: background-color 0.3s ease;
+        /* Add a smooth transition on hover */
+      }
+
+      .btn-group button:hover {
+        background-color: #e0e0e0;
+        /* Change the background color on hover */
+      }
+
+      .main-content {
+        /* padding-top: 1cm; */
+        width: 100%;
+        margin: auto;
+        margin-left: 50px;
+        transition: margin-left 0.3s ease;
+      }
+
+      .sidebar-toggler {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1100;
+      }
+
+      .custom-progress-container {
+        width: 100%;
+        height: 3vh;
+      }
+
+      .custom-progress-bar {
+        border-radius: 20px;
+        /* Adjust the border-radius for a rounded appearance */
+        background: linear-gradient(to right, #4caf50, #2196f3);
+        /* Gradient background colors */
+        color: white;
+        /* Text color */
+      }
+
+      .card-body {
+        background-color: #ecf0f1;
+        cursor: pointer;
+        transition: 1s ease-in;
+      }
+
+      .card {
+        border-radius: 15px !important;
+        color: #000000;
+        background-color: #3498db;
+      }
+
+      .card:hover {
+        color: #000000;
+        background-color: #3164d3;
+      }
+
+      .buttonpage {
+        font-size: 17px;
+
+        border-radius: 10px;
+
+        background-color: #2ecc71;
+        color: #ffffff;
+      }
+
+      .buttonpage:hover {
+        border: 1px solid black;
+      }
+
+      /* Internal CSS for font sizes */
+      .nav-link span {
+        font-size: 22px;
+        /* Default font size for all nav links */
+      }
+
+      .nav-link-demo {
+        font-size: 26px;
+        /* Slightly larger font size for the 'Tutorease' text */
+      }
+
+      /* Internal CSS for font sizes and additional styling */
+      .nav-link span,
+      .nav-link i {
+        font-size: 22px;
+        /* Default font size for nav link text and icons */
+      }
+
+      .nav-link-demo {
+        font-size: 26px;
+        /* Larger font size for 'Tutorease' */
+      }
+
+      .social-icons i {
+        font-size: 40px;
+        /* Font size for social media icons */
+      }
+
+      .logout-link {
+        margin-top: 5cm;
+        padding-left: 1.6cm;
+        font-size: 20px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+      }
+
+      /* Internal CSS for the alert message */
+      .alert {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .modal-header {
+        background-color: #ffc107;
+        /* yellow color for bg-warning */
+      }
+
+      .modal-title {
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .modal-body {
+        font-size: 20px;
+        color: #000;
+        /* text-dark */
+      }
+
+      .card-body {
+        border-radius: 15px;
+      }
+
+      .img-fluid {
+        height: 25vh;
+        border-radius: 10px;
+      }
+
+      .buttonpage {
+        font-weight: bold;
+      }
+
+      .buttonpage {
+        border: none;
+        margin-left: 7px;
+      }
+
+      /* Internal CSS for font sizes */
+      .nav-link span {
+        font-size: 22px;
+        /* Default font size for all nav links */
+      }
+
+      .nav-link-demo {
+        font-size: 26px;
+        /* Slightly larger font size for the 'Tutorease' text */
+      }
+
+      /* Internal CSS for font sizes and additional styling */
+      .nav-link span,
+      .nav-link i {
+        font-size: 22px;
+        /* Default font size for nav link text and icons */
+      }
+
+      .nav-link-demo {
+        font-size: 26px;
+        /* Larger font size for 'Tutorease' */
+      }
+
+      .social-icons i {
+        font-size: 40px;
+        /* Font size for social media icons */
+      }
+
+      .logout-link {
+        margin-top: 5cm;
+        padding-left: 0.7cm;
+        font-size: 20px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+      }
+
+      /* Internal CSS for the alert message */
+      .alert {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .modal-title {
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .modal-body {
+        font-size: 20px;
+        color: #000;
+        /* text-dark */
+      }
+
+      .card-body {
+        border-radius: 15px;
+      }
+
+      .img-fluid {
+        margin-top: 1cm;
+        height: 25vh;
+        border-radius: 10px;
+      }
+    }
+
+    @media screen and (max-width: 850px) and (min-width: 748px) {
+      body {
+        min-height: 100vh;
+      }
+
+      .side-navbar {
+        width: 220px;
+        height: 100%;
+        position: fixed;
+        margin-left: -300px;
+        background-color: #ececec;
+        transition: 0.5s;
+      }
+
+      .my-container {
+        transition: 0.4s;
+      }
+
+      .active-nav {
+        margin-left: 0;
+      }
+
+      /* for main section */
+      .active-cont {
+        margin-left: 250px;
+      }
+
+      #menu-btn {
+        background-color: #000000;
+        color: #fff;
+        margin-left: -45px;
+      }
+
+      .my-container input {
+        border-radius: 2rem;
+        padding: 2px 20px;
+      }
+
+      .btn-group button {
+        padding: 15px 20px;
+        /* Adjust padding to increase button size */
+        font-size: 18px;
+        /* Adjust font size as needed */
+        transition: background-color 0.3s ease;
+        /* Add a smooth transition on hover */
+      }
+
+      .btn-group button:hover {
+        background-color: #e0e0e0;
+        /* Change the background color on hover */
+      }
+
+      .main-content {
+        /* padding-top: 1cm; */
+        width: 100%;
+        margin: auto;
+        margin-left: 50px;
+        transition: margin-left 0.3s ease;
+      }
+
+      .sidebar-toggler {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1100;
+      }
+
+      .custom-progress-container {
+        width: 100%;
+        height: 3vh;
+      }
+
+      .custom-progress-bar {
+        border-radius: 20px;
+        /* Adjust the border-radius for a rounded appearance */
+        background: linear-gradient(to right, #4caf50, #2196f3);
+        /* Gradient background colors */
+        color: white;
+        /* Text color */
+      }
+
+      .card-body {
+        background-color: #ecf0f1;
+        cursor: pointer;
+        transition: 1s ease-in;
+      }
+
+      .card {
+        border-radius: 15px !important;
+        color: #000000;
+        background-color: #3498db;
+      }
+
+      .card:hover {
+        color: #000000;
+        background-color: #3164d3;
+      }
+
+      .buttonpage {
+        font-size: 17px;
+
+        border-radius: 10px;
+
+        background-color: #2ecc71;
+        color: #ffffff;
+      }
+
+      .buttonpage:hover {
+        border: 1px solid black;
+      }
+
+      /* Internal CSS for font sizes */
+      .nav-link span {
+        font-size: 15px;
+        /* Default font size for all nav links */
+      }
+
+      .nav-link-demo {
+        font-size: 16px;
+        /* Slightly larger font size for the 'Tutorease' text */
+      }
+
+      /* Internal CSS for font sizes and additional styling */
+      .nav-link span,
+      .nav-link i {
+        font-size: 15px;
+        /* Default font size for nav link text and icons */
+      }
+
+      .nav-link-demo {
+        font-size: 26px;
+        /* Larger font size for 'Tutorease' */
+      }
+
+      .social-icons i {
+        font-size: 40px;
+        /* Font size for social media icons */
+      }
+
+      .logout-link {
+        margin-top: 5cm;
+        padding-left: 1.6cm;
+        font-size: 20px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+      }
+
+      /* Internal CSS for the alert message */
+      .alert {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .modal-header {
+        background-color: #ffc107;
+        /* yellow color for bg-warning */
+      }
+
+      .modal-title {
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .modal-body {
+        font-size: 20px;
+        color: #000;
+        /* text-dark */
+      }
+
+      .card-body {
+        border-radius: 15px;
+      }
+
+      .img-fluid {
+        height: 25vh;
+        border-radius: 10px;
+      }
+
+      .buttonpage {
+        font-weight: bold;
+      }
+
+      .buttonpage {
+        border: none;
+        margin-left: 7px;
+      }
+
+      /* Internal CSS for font sizes */
+      .nav-link span {
+        font-size: 22px;
+        /* Default font size for all nav links */
+      }
+
+      .nav-link-demo {
+        font-size: 26px;
+        /* Slightly larger font size for the 'Tutorease' text */
+      }
+
+      /* Internal CSS for font sizes and additional styling */
+      .nav-link span,
+      .nav-link i {
+        font-size: 22px;
+        /* Default font size for nav link text and icons */
+      }
+
+      .nav-link-demo {
+        font-size: 26px;
+        /* Larger font size for 'Tutorease' */
+      }
+
+      .social-icons i {
+        font-size: 40px;
+        /* Font size for social media icons */
+      }
+
+      .logout-link {
+        margin-top: 5cm;
+        padding-left: 0.7cm;
+        font-size: 20px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+      }
+
+      /* Internal CSS for the alert message */
+      .alert {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .modal-title {
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .modal-body {
+        font-size: 20px;
+        color: #000;
+        /* text-dark */
+      }
+
+      .card-body {
+        border-radius: 15px;
+      }
+
+      .img-fluid {
+        margin-right: 5%;
+        margin-top: 1cm;
+        height: 25vh;
+        border-radius: 10px;
+      }
+    }
+
+    @media screen and (max-width: 747px) and (min-width: 632px) {
+      body {
+        min-height: 100vh;
+      }
+
+      .side-navbar {
+        width: 220px;
+        height: 100%;
+        position: fixed;
+        margin-left: -300px;
+        background-color: #ececec;
+        transition: 0.5s;
+      }
+
+      .my-container {
+        transition: 0.4s;
+      }
+
+      .active-nav {
+        margin-left: 0;
+      }
+
+      /* for main section */
+      .active-cont {
+        margin-left: 250px;
+      }
+
+      #menu-btn {
+        background-color: #000000;
+        color: #fff;
+        margin-left: -45px;
+      }
+
+      .my-container input {
+        border-radius: 2rem;
+        padding: 2px 20px;
+      }
+
+      .btn-group button {
+        padding: 15px 20px;
+        /* Adjust padding to increase button size */
+        font-size: 18px;
+        /* Adjust font size as needed */
+        transition: background-color 0.3s ease;
+        /* Add a smooth transition on hover */
+      }
+
+      .btn-group button:hover {
+        background-color: #e0e0e0;
+        /* Change the background color on hover */
+      }
+
+      .main-content {
+        /* padding-top: 1cm; */
+        width: 100%;
+        margin: auto;
+        margin-left: 50px;
+        transition: margin-left 0.3s ease;
+      }
+
+      .sidebar-toggler {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1100;
+      }
+
+      .custom-progress-container {
+        width: 100%;
+        height: 3vh;
+      }
+
+      .custom-progress-bar {
+        border-radius: 20px;
+        /* Adjust the border-radius for a rounded appearance */
+        background: linear-gradient(to right, #4caf50, #2196f3);
+        /* Gradient background colors */
+        color: white;
+        /* Text color */
+      }
+
+      .card-body {
+        background-color: #ecf0f1;
+        cursor: pointer;
+        transition: 1s ease-in;
+      }
+
+      .card {
+        border-radius: 15px !important;
+        color: #000000;
+        background-color: #3498db;
+      }
+
+      .card:hover {
+        color: #000000;
+        background-color: #3164d3;
+      }
+
+      .buttonpage {
+        font-size: 17px;
+
+        border-radius: 10px;
+
+        background-color: #2ecc71;
+        color: #ffffff;
+      }
+
+      .buttonpage:hover {
+        border: 1px solid black;
+      }
+
+      /* Internal CSS for font sizes */
+      .nav-link span {
+        font-size: 15px;
+        /* Default font size for all nav links */
+      }
+
+      .nav-link-demo {
+        font-size: 16px;
+        /* Slightly larger font size for the 'Tutorease' text */
+      }
+
+      /* Internal CSS for font sizes and additional styling */
+      .nav-link span,
+      .nav-link i {
+        font-size: 15px;
+        /* Default font size for nav link text and icons */
+      }
+
+      .nav-link-demo {
+        font-size: 26px;
+        /* Larger font size for 'Tutorease' */
+      }
+
+      .social-icons i {
+        font-size: 40px;
+        /* Font size for social media icons */
+      }
+
+      .logout-link {
+        margin-top: 5cm;
+        padding-left: 1.6cm;
+        font-size: 20px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+      }
+
+      /* Internal CSS for the alert message */
+      .alert {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .modal-header {
+        background-color: #ffc107;
+        /* yellow color for bg-warning */
+      }
+
+      .modal-title {
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .modal-body {
+        font-size: 20px;
+        color: #000;
+        /* text-dark */
+      }
+
+      .card-body {
+        border-radius: 15px;
+      }
+
+      .img-fluid {
+        height: 25vh;
+        border-radius: 10px;
+      }
+
+      .buttonpage {
+        font-weight: bold;
+      }
+
+      .buttonpage {
+        border: none;
+        margin-left: 7px;
+      }
+
+      /* Internal CSS for font sizes */
+      .nav-link span {
+        font-size: 22px;
+        /* Default font size for all nav links */
+      }
+
+      .nav-link-demo {
+        font-size: 26px;
+        /* Slightly larger font size for the 'Tutorease' text */
+      }
+
+      /* Internal CSS for font sizes and additional styling */
+      .nav-link span,
+      .nav-link i {
+        font-size: 22px;
+        /* Default font size for nav link text and icons */
+      }
+
+      .nav-link-demo {
+        font-size: 26px;
+        /* Larger font size for 'Tutorease' */
+      }
+
+      .social-icons i {
+        font-size: 40px;
+        /* Font size for social media icons */
+      }
+
+      .logout-link {
+        margin-top: 5cm;
+        padding-left: 0.7cm;
+        font-size: 20px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+      }
+
+      /* Internal CSS for the alert message */
+      .alert {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .modal-title {
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .modal-body {
+        font-size: 20px;
+        color: #000;
+        /* text-dark */
+      }
+
+      .card-body {
+        border-radius: 15px;
+      }
+
+      .img-fluid {
+        margin-right: 6%;
+        margin-top: 1.1cm;
+        height: 25vh;
+        border-radius: 10px;
+      }
+    }
+
+    @media screen and (max-width: 631px) and (min-width: 589px) {
+      body {
+        min-height: 100vh;
+      }
+
+      .side-navbar {
+        width: 220px;
+        height: 100%;
+        position: fixed;
+        margin-left: -300px;
+        background-color: #ececec;
+        transition: 0.5s;
+      }
+
+      .my-container {
+        transition: 0.4s;
+      }
+
+      .active-nav {
+        margin-left: 0;
+      }
+
+      /* for main section */
+      .active-cont {
+        margin-left: 250px;
+      }
+
+      #menu-btn {
+        background-color: #000000;
+        color: #fff;
+        margin-left: -45px;
+      }
+
+      .my-container input {
+        border-radius: 2rem;
+        padding: 2px 20px;
+      }
+
+      .btn-group button {
+        padding: 15px 20px;
+        /* Adjust padding to increase button size */
+        font-size: 18px;
+        /* Adjust font size as needed */
+        transition: background-color 0.3s ease;
+        /* Add a smooth transition on hover */
+      }
+
+      .btn-group button:hover {
+        background-color: #e0e0e0;
+        /* Change the background color on hover */
+      }
+
+      .main-content {
+        /* padding-top: 1cm; */
+        width: 100%;
+        margin: auto;
+        margin-left: 50px;
+        transition: margin-left 0.3s ease;
+      }
+
+      .sidebar-toggler {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1100;
+      }
+
+      .custom-progress-container {
+        width: 100%;
+        height: 3vh;
+      }
+
+      .custom-progress-bar {
+        border-radius: 20px;
+        /* Adjust the border-radius for a rounded appearance */
+        background: linear-gradient(to right, #4caf50, #2196f3);
+        /* Gradient background colors */
+        color: white;
+        /* Text color */
+      }
+
+      .card-body {
+        background-color: #ecf0f1;
+        cursor: pointer;
+        transition: 1s ease-in;
+      }
+
+      .card {
+        border-radius: 15px !important;
+        color: #000000;
+        background-color: #3498db;
+      }
+
+      .card:hover {
+        color: #000000;
+        background-color: #3164d3;
+      }
+
+      .buttonpage {
+        font-size: 17px;
+
+        border-radius: 10px;
+
+        background-color: #2ecc71;
+        color: #ffffff;
+      }
+
+      .buttonpage:hover {
+        border: 1px solid black;
+      }
+
+      /* Internal CSS for font sizes */
+      .nav-link span {
+        font-size: 15px;
+        /* Default font size for all nav links */
+      }
+
+      .nav-link-demo {
+        font-size: 16px;
+        /* Slightly larger font size for the 'Tutorease' text */
+      }
+
+      /* Internal CSS for font sizes and additional styling */
+      .nav-link span,
+      .nav-link i {
+        font-size: 15px;
+        /* Default font size for nav link text and icons */
+      }
+
+      .nav-link-demo {
+        font-size: 26px;
+        /* Larger font size for 'Tutorease' */
+      }
+
+      .social-icons i {
+        font-size: 40px;
+        /* Font size for social media icons */
+      }
+
+      .logout-link {
+        margin-top: 5cm;
+        padding-left: 1.6cm;
+        font-size: 20px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+      }
+
+      /* Internal CSS for the alert message */
+      .alert {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .modal-header {
+        background-color: #ffc107;
+        /* yellow color for bg-warning */
+      }
+
+      .modal-title {
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .modal-body {
+        font-size: 20px;
+        color: #000;
+        /* text-dark */
+      }
+
+      .card-body {
+        border-radius: 15px;
+      }
+
+      .img-fluid {
+        height: 25vh;
+        border-radius: 10px;
+      }
+
+      .buttonpage {
+        font-weight: bold;
+      }
+
+      .buttonpage {
+        border: none;
+        margin-left: 7px;
+      }
+
+      /* Internal CSS for font sizes */
+      .nav-link span {
+        font-size: 22px;
+        /* Default font size for all nav links */
+      }
+
+      .nav-link-demo {
+        font-size: 26px;
+        /* Slightly larger font size for the 'Tutorease' text */
+      }
+
+      /* Internal CSS for font sizes and additional styling */
+      .nav-link span,
+      .nav-link i {
+        font-size: 22px;
+        /* Default font size for nav link text and icons */
+      }
+
+      .nav-link-demo {
+        font-size: 26px;
+        /* Larger font size for 'Tutorease' */
+      }
+
+      .social-icons i {
+        font-size: 40px;
+        /* Font size for social media icons */
+      }
+
+      .logout-link {
+        margin-top: 5cm;
+        padding-left: 0.7cm;
+        font-size: 20px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+      }
+
+      /* Internal CSS for the alert message */
+      .alert {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .modal-title {
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .modal-body {
+        font-size: 20px;
+        color: #000;
+        /* text-dark */
+      }
+
+      .card-body {
+        border-radius: 15px;
+      }
+
+      .img-fluid {
+        margin-left: 1;
+        margin-top: 1cm;
+        height: 25vh;
+        border-radius: 10px;
+      }
+    }
+
+    @media screen and (max-width: 588px) and (min-width: 400px) {
+      body {
+        min-height: 100vh;
+      }
+
+      .side-navbar {
+        width: 220px;
+        height: 100%;
+        position: fixed;
+        margin-left: -300px;
+        background-color: #ececec;
+        transition: 0.5s;
+      }
+
+      .my-container {
+        transition: 0.4s;
+      }
+
+      .active-nav {
+        margin-left: 0;
+      }
+
+      /* for main section */
+      .active-cont {
+        margin-left: 250px;
+      }
+
+      #menu-btn {
+        background-color: #000000;
+        color: #fff;
+        margin-left: -45px;
+      }
+
+      .my-container input {
+        border-radius: 2rem;
+        padding: 2px 20px;
+      }
+
+      .btn-group button {
+        padding: 15px 20px;
+        /* Adjust padding to increase button size */
+        font-size: 18px;
+        /* Adjust font size as needed */
+        transition: background-color 0.3s ease;
+        /* Add a smooth transition on hover */
+      }
+
+      .btn-group button:hover {
+        background-color: #e0e0e0;
+        /* Change the background color on hover */
+      }
+
+      .main-content {
+        /* padding-top: 1cm; */
+        width: 100%;
+        margin: auto;
+        margin-left: 50px;
+        transition: margin-left 0.3s ease;
+      }
+
+      .sidebar-toggler {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1100;
+      }
+
+      .custom-progress-container {
+        width: 100%;
+        height: 3vh;
+      }
+
+      .custom-progress-bar {
+        border-radius: 20px;
+        /* Adjust the border-radius for a rounded appearance */
+        background: linear-gradient(to right, #4caf50, #2196f3);
+        /* Gradient background colors */
+        color: white;
+        /* Text color */
+      }
+
+      .card-body {
+        background-color: #ecf0f1;
+        cursor: pointer;
+        transition: 1s ease-in;
+      }
+
+      .card {
+        border-radius: 15px !important;
+        color: #000000;
+        background-color: #3498db;
+      }
+
+      .card:hover {
+        color: #000000;
+        background-color: #3164d3;
+      }
+
+      .buttonpage {
+        font-size: 17px;
+
+        border-radius: 10px;
+
+        background-color: #2ecc71;
+        color: #ffffff;
+      }
+
+      .buttonpage:hover {
+        border: 1px solid black;
+      }
+
+      /* Internal CSS for font sizes */
+      .nav-link span {
+        font-size: 15px;
+        /* Default font size for all nav links */
+      }
+
+      .nav-link-demo {
+        font-size: 16px;
+        /* Slightly larger font size for the 'Tutorease' text */
+      }
+
+      /* Internal CSS for font sizes and additional styling */
+      .nav-link span,
+      .nav-link i {
+        font-size: 15px;
+        /* Default font size for nav link text and icons */
+      }
+
+      .nav-link-demo {
+        font-size: 26px;
+        /* Larger font size for 'Tutorease' */
+      }
+
+      .social-icons i {
+        font-size: 40px;
+        /* Font size for social media icons */
+      }
+
+      .logout-link {
+        margin-top: 5cm;
+        padding-left: 1.6cm;
+        font-size: 20px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+      }
+
+      /* Internal CSS for the alert message */
+      .alert {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .modal-header {
+        background-color: #ffc107;
+        /* yellow color for bg-warning */
+      }
+
+      .modal-title {
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .modal-body {
+        font-size: 20px;
+        color: #000;
+        /* text-dark */
+      }
+
+      .card-body {
+        border-radius: 15px;
+      }
+
+      .img-fluid {
+        height: 25vh;
+        border-radius: 10px;
+      }
+
+      .buttonpage {
+        font-weight: bold;
+      }
+
+      .buttonpage {
+        border: none;
+        margin-left: 7px;
+      }
+
+      /* Internal CSS for font sizes */
+      .nav-link span {
+        font-size: 22px;
+        /* Default font size for all nav links */
+      }
+
+      .nav-link-demo {
+        font-size: 26px;
+        /* Slightly larger font size for the 'Tutorease' text */
+      }
+
+      /* Internal CSS for font sizes and additional styling */
+      .nav-link span,
+      .nav-link i {
+        font-size: 22px;
+        /* Default font size for nav link text and icons */
+      }
+
+      .nav-link-demo {
+        font-size: 26px;
+        /* Larger font size for 'Tutorease' */
+      }
+
+      .social-icons i {
+        font-size: 40px;
+        /* Font size for social media icons */
+      }
+
+      .logout-link {
+        margin-top: 5cm;
+        padding-left: 0.7cm;
+        font-size: 20px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+      }
+
+      /* Internal CSS for the alert message */
+      .alert {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .modal-title {
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .modal-body {
+        font-size: 20px;
+        color: #000;
+        /* text-dark */
+      }
+
+      .card-body {
+        border-radius: 15px;
+      }
+
+      .img-fluid {
+        margin-left: 1;
+        margin-top: 1cm;
+        height: 25vh;
+        border-radius: 10px;
+      }
+    }
+
+    @media screen and (max-width: 399px) and (min-width: 280px) {
+      body {
+        min-height: 100vh;
+      }
+
+      .side-navbar {
+        width: 220px;
+        height: 100%;
+        position: fixed;
+        margin-left: -300px;
+        background-color: #ececec;
+        transition: 0.5s;
+      }
+
+      .my-container {
+        transition: 0.4s;
+      }
+
+      .active-nav {
+        margin-left: 0;
+      }
+
+      /* for main section */
+      .active-cont {
+        margin-left: 250px;
+      }
+
+      #menu-btn {
+        background-color: #000000;
+        color: #fff;
+        margin-left: -45px;
+      }
+
+      .my-container input {
+        border-radius: 2rem;
+        padding: 2px 20px;
+      }
+
+      .btn-group button {
+        padding: 15px 20px;
+        /* Adjust padding to increase button size */
+        font-size: 18px;
+        /* Adjust font size as needed */
+        transition: background-color 0.3s ease;
+        /* Add a smooth transition on hover */
+      }
+
+      .btn-group button:hover {
+        background-color: #e0e0e0;
+        /* Change the background color on hover */
+      }
+
+      .main-content {
+        /* padding-top: 1cm; */
+        width: 100%;
+        margin: auto;
+        transition: margin-left 0.3s ease;
+      }
+
+      .sidebar-toggler {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1100;
+      }
+
+      .custom-progress-container {
+        width: 100%;
+        height: 3vh;
+      }
+
+      .custom-progress-bar {
+        border-radius: 20px;
+        /* Adjust the border-radius for a rounded appearance */
+        background: linear-gradient(to right, #4caf50, #2196f3);
+        /* Gradient background colors */
+        color: white;
+        /* Text color */
+      }
+
+      .card-body {
+        background-color: #ecf0f1;
+        cursor: pointer;
+        transition: 1s ease-in;
+      }
+
+      .card {
+        border-radius: 15px !important;
+        color: #000000;
+        background-color: #3498db;
+      }
+
+      .card:hover {
+        color: #000000;
+        background-color: #3164d3;
+      }
+
+      .buttonpage {
+        font-size: 17px;
+
+        border-radius: 10px;
+
+        background-color: #2ecc71;
+        color: #ffffff;
+      }
+
+      .buttonpage:hover {
+        border: 1px solid black;
+      }
+
+      /* Internal CSS for font sizes */
+      .nav-link span {
+        font-size: 15px;
+        /* Default font size for all nav links */
+      }
+
+      .nav-link-demo {
+        font-size: 16px;
+        /* Slightly larger font size for the 'Tutorease' text */
+      }
+
+      /* Internal CSS for font sizes and additional styling */
+      .nav-link span,
+      .nav-link i {
+        font-size: 15px;
+        /* Default font size for nav link text and icons */
+      }
+
+      .nav-link-demo {
+        font-size: 26px;
+        /* Larger font size for 'Tutorease' */
+      }
+
+      .social-icons i {
+        font-size: 40px;
+        /* Font size for social media icons */
+      }
+
+      .logout-link {
+        margin-top: 5cm;
+        padding-left: 1.6cm;
+        font-size: 20px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+      }
+
+      /* Internal CSS for the alert message */
+      .alert {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .modal-header {
+        background-color: #ffc107;
+        /* yellow color for bg-warning */
+      }
+
+      .modal-title {
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .modal-body {
+        font-size: 20px;
+        color: #000;
+        /* text-dark */
+      }
+
+      .card-body {
+        border-radius: 15px;
+      }
+
+      .img-fluid {
+        height: 25vh;
+        border-radius: 10px;
+      }
+
+      .buttonpage {
+        font-weight: bold;
+      }
+
+      .buttonpage {
+        border: none;
+        margin-left: 7px;
+      }
+
+      /* Internal CSS for font sizes */
+      .nav-link span {
+        font-size: 22px;
+        /* Default font size for all nav links */
+      }
+
+      .nav-link-demo {
+        font-size: 26px;
+        /* Slightly larger font size for the 'Tutorease' text */
+      }
+
+      /* Internal CSS for font sizes and additional styling */
+      .nav-link span,
+      .nav-link i {
+        font-size: 22px;
+        /* Default font size for nav link text and icons */
+      }
+
+      .nav-link-demo {
+        font-size: 26px;
+        /* Larger font size for 'Tutorease' */
+      }
+
+      .social-icons i {
+        font-size: 40px;
+        /* Font size for social media icons */
+      }
+
+      .logout-link {
+        margin-top: 5cm;
+        padding-left: 0.7cm;
+        font-size: 20px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+      }
+
+      /* Internal CSS for the alert message */
+      .alert {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .modal-title {
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .modal-body {
+        font-size: 20px;
+        color: #000;
+        /* text-dark */
+      }
+
+      .card-body {
+        border-radius: 15px;
+      }
+
+      .img-fluid {
+        margin-right: 6%;
+        margin-top: 1cm !important;
+        height: 5vh;
+        border-radius: 10px;
+      }
+    }
+
+    /* Internal CSS for font sizes */
+    .nav-link span {
+      font-size: 22px;
+      /* Default font size for all nav links */
+    }
+
+    .nav-link-demo {
+      font-size: 26px;
+      /* Slightly larger font size for the 'Tutorease' text */
+    }
+
+    /* Internal CSS for font sizes and additional styling */
+    .nav-link span,
+    .nav-link i {
+      font-size: 22px;
+      /* Default font size for nav link text and icons */
+    }
+
+    .nav-link-demo {
+      font-size: 26px;
+      /* Larger font size for 'Tutorease' */
+    }
+
+    .social-icons i {
+      font-size: 40px;
+      /* Font size for social media icons */
+    }
+
+    .logout-link {
+      margin-top: 5cm;
+      padding-left: 0.5cm;
+      font-size: 20px;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+
+    /* Internal CSS for the alert message */
+    .alert {
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .modal-header {
+      background-color: #ffc107;
+      /* yellow color for bg-warning */
+    }
+
+    .modal-title {
+      font-size: 25px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .modal-body {
+      font-size: 20px;
+      color: #000;
+      /* text-dark */
+    }
+
+    .card-body {
+      border-radius: 15px;
+    }
+
+    .img-fluid {
+      margin-top: 0.1cm;
+      height: 25vh;
+      border-radius: 10px;
+    }
+  </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

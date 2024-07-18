@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+</head>
+<body>
+    <button id="start">Click me</button>
+    <!-- Include this script in your HTML template -->
+<script>
+    const start=document.getElementById("start")
+    start.addEventListener('click', function () {
+        location.assign('/test?data=start')
+    });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body {
+    min-height: 100vh;
+    background: #4e54c8;
+    background: -webkit-linear-gradient(to left, #747ae9, #4e54c8);
+}
+
+
+.main_class{
+    margin-top: 3%;
+}
+#hovershadow:hover {
+    box-shadow: 0 0 20px white;
+}
+
+
+
+
+
+/* nav bar css */
+#navbarSupportedContent{
+    border-radius: 10px;
+    background-color: #00000000 !important;
+}
+#navbarSupportedContent ul{
+    margin-left: 2%;
+    /* border: 2px solid red; */
+}
+#navbarSupportedContent li{
+    margin-left: 10px;
+}
+#navbarSupportedContent a:hover{
+    background-color: #000 !important;
+    border-radius: 10px !important;
+}
+/* end */
+
+
+
+
+
+/* side nav bar */
+.side-navbar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    margin-left: -300px;
+    background-color: #ececec;
+    transition: 0.5s;
+}
+
+.nav-link-demo {
+    text-decoration: none;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+    background-color: #f3ca01cd;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+.my-container {
+    transition: 0.4s;
+}
+
+.active-nav {
+    margin-left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for main section */
+.active-cont {
+    margin-left: 250px;
+}
+
+#menu-btn {
+    background-color: #000000;
+    color: #fff;
+    margin-left: -45px;
+}
+
+.my-container input {
+    border-radius: 2rem;
+    padding: 2px 20px;
+}
+
+
+.btn-group button {
+    padding: 15px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-group button:hover {
+    background-color: #e0e0e0;
+}
+
+.main-content {
+    width: 100%;
+    margin: auto;
+    transition: margin-left 0.3s ease;
+}
+
+
+.sidebar-toggler {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1100;
+}
+
+.custom-progress-container {
+    width: 100%;
+    height: 3vh;
+}
+
+.custom-progress-bar {
+    border-radius: 20px;
+    background: linear-gradient(to right, #4CAF50, #2196F3);
+    color: white;
+}
+
+.card-body {
+    background-color: #ecf0f1;
+    cursor: pointer;
+    transition: 1s ease-in;
+}
+
+.card {
+    border-radius: 15px !important;
+    color: #000000;
+    background-color: #000000;
+    transition: background-color 0.5s ease, color 0.5s ease; /* Add this line */
+}
+
+.card-body {
+    transition: background-color 0.5s ease; /* Add this line if you want the body background to also transition smoothly */
+}
+
+.card-body:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.card:hover {
+    color: #000000;
+    background-color: #04ae0f;
+}
+
+.buttonpage {
+    border-radius: 10px;
+    background-color: #2ecc71;
+    color: #ffffff;
+}
+
+.buttonpage:hover {
+    background-color: gold;
+    /* border: 1px solid black; */
+}
+
+/* Internal CSS for font sizes */
+.nav-link span {
+    font-size: 22px;
+    /* Default font size for all nav links */
+}
+
+.nav-link-demo {
+    font-size: 26px;
+    /* Slightly larger font size for the 'Tutorease' text */
+}
+
+/* Internal CSS for font sizes and additional styling */
+.nav-link span,
+.nav-link i {
+    font-size: 22px;
+    /* Default font size for nav link text and icons */
+}
+
+.nav-link-demo {
+    font-size: 26px;
+    /* Larger font size for 'Tutorease' */
+}
+
+.social-icons i {
+    font-size: 40px;
+    /* Font size for social media icons */
+}
+
+.logout-link {
+    margin-top: 5cm;
+    padding-left: 1.6cm;
+    font-size: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+/* Internal CSS for the alert message */
+.alert {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+.modal-header {
+    background-color: #FFC107;
+    /* yellow color for bg-warning */
+}
+
+.modal-title {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal-body {
+    font-size: 20px;
+    color: #000;
+    /* text-dark */
+}
+
+.card-body {
+    border-radius: 15px;
+}
+
+.img-fluid {
+    height: 25vh;
+    border-radius: 10px;
+}
+
+.buttonpage {
+    font-weight: bold;
+}
+
+.buttonpage {
+    border: none;
+    margin-left: 7px;
+}
+
+
+
+/* Background Animation */
+
+
+
+.area {
+    background: #4e54c8;
+    background: -webkit-linear-gradient(to left, #747ae9, #4e54c8);
+    width: 100%;
+    height: 100%;
+
+
+}
+

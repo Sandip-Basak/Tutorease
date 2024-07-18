@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #4e54c8;
+    background: -webkit-linear-gradient(to left, #747ae9, #4e54c8);
+}
+
+.side-navbar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    margin-left: -300px;
+    background-color: #ececec;
+    transition: 0.5s;
+}
+
+.nav-link-demo {
+    text-decoration: none;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+    background-color: #f3ca01cd;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+.my-container {
+    transition: 0.4s;
+}
+
+.active-nav {
+    margin-left: 0;
+}
+
+
+
+
+/* for main section */
+.active-cont {
+    margin-left: 250px;
+}
+
+#menu-btn {
+    background-color: #000000;
+    color: #fff;
+    margin-left: -45px;
+}
+
+.my-container input {
+    border-radius: 2rem;
+    padding: 2px 20px;
+}
+
+
+.btn-group button {
+    padding: 15px 20px;
+    /* Adjust padding to increase button size */
+    font-size: 18px;
+    /* Adjust font size as needed */
+    transition: background-color 0.3s ease;
+    /* Add a smooth transition on hover */
+}
+
+.btn-group button:hover {
+    background-color: #e0e0e0;
+    /* Change the background color on hover */
+}
+
+.main-content {
+    padding-top: 1cm;
+    width: 100%;
+    margin: auto;
+    margin-left: 50px;
+    transition: margin-left 0.3s ease;
+}
+
+
+.sidebar-toggler {
+
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1100;
+}
+
+.custom-progress-container {
+    width: 100%;
+    height: 3vh;
+}
+
+.custom-progress-bar {
+    border-radius: 20px;
+    /* Adjust the border-radius for a rounded appearance */
+    background: linear-gradient(to right, #4CAF50, #2196F3);
+    /* Gradient background colors */
+    color: white;
+    /* Text color */
+}
+
+.card-body {
+    background-color: #ecf0f1;
+    cursor: pointer;
+    transition: 1s ease-in;
+}
+
+.card {
+    border-radius: 15px !important;
+    color: #000000;
+    background-color: #000000;
+}
+
+
+.card-body:hover {
+    background-color: #cbcbcb;
+    cursor: pointer;
+}
+
+.card:hover {
+    color: #000000;
+    background-color: #5cb85c;
+}
+
+.buttonpage {
+    /* font-size: 20px;
+    width: 25%; */
+    border-radius: 10px;
+
+    background-color: #2ecc71;
+    color: #ffffff;
+}
+
+.buttonpage:hover {
+    border: 1px solid black;
+
+}
+
+/* Internal CSS for font sizes */
+.nav-link span {
+    font-size: 22px;
+    /* Default font size for all nav links */
+}
+
+.nav-link-demo {
+    font-size: 26px;
+    /* Slightly larger font size for the 'Tutorease' text */
+}
+
+/* Internal CSS for font sizes and additional styling */
+.nav-link span,
+.nav-link i {
+    font-size: 22px;
+    /* Default font size for nav link text and icons */
+}
+
+.nav-link-demo {
+    font-size: 26px;
+    /* Larger font size for 'Tutorease' */
+}
+
+.social-icons i {
+    font-size: 40px;
+    /* Font size for social media icons */
+}
+
+.logout-link {
+    margin-top: 5cm;
+    padding-left: 1.6cm;
+    font-size: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+/* Internal CSS for the alert message */
+.alert {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+.modal-header {
+    background-color: #FFC107;
+    /* yellow color for bg-warning */
+}
+
+.modal-title {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal-body {
+    font-size: 20px;
+    color: #000;
+    /* text-dark */
+}
+
+.card-body {
+    border-radius: 15px;
+}
+
+.img-fluid {
+    height: 25vh;
+    border-radius: 10px;
+    float: right;
+}
+
+.buttonpage {
+    font-weight: bold;
+}
+
+.buttonpage {
+    border: none;
+    margin-left: 7px;
+}
+
+/* .main-content {
+    padding-top: -2cm;
+} */
+
+
+
+
+
+
+
+/* Background Animation */
+
+
+
+.area {
+    background: #4e54c8;
+    background: -webkit-linear-gradient(to left, #747ae9, #4e54c8);
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+
+}
+
+.circles li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#popup-menu {
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+}
+
+#popup-menu a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#button {
+    border: none !important;
+    margin-top: 20px !important;
+    background-color: #3333332b !important;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, border-color 0.3s;
+    /* Smooth transition */
+}
+
+#button:hover {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.502);
+}
+
+
+#button {
+    width: 400px;
+    margin-top: 120px !important;
+}
+
+
+
+.btn {
+    position: relative;
+    /* z-index: 1; */
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    /* Change background color as needed */
+    z-index: -1;
+}

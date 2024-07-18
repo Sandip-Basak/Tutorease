@@ -1,0 +1,81 @@
+{% extends 'admin/change_form.html' %}
+{% block field_sets %}
+{{ block.super }}
+<div class="my-custom-fields">
+    <!-- {{ adminform }} -->
+    {% if adminform.form.video_link.value != None and adminform.form.video_link.value != '' %}
+    <h3>Video: </h3>
+    <iframe class="m-auto rounded video-dimensions" src="{{ adminform.form.video_link.value }}" title="video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    {% endif %}
+    
+    {% if adminform.form.document.value != None and adminform.form.document.value != '' %}
+    <h3>Document: </h3>
+    <iframe src="/media/{{ adminform.form.document.value }}" width="100%" height="600px"></iframe>
+    {% endif %}
+
+
+
+    <style>
+        .video-dimensions {
+            width: 45%;
+            height: 315px;
+        }
+
+
+
+
+        @media screen and (max-width: 1289px) and (min-width: 1000px) {
+
+        .video-dimensions {
+        width: 80%;
+        height: 300px;
+        }
+        }
+
+        @media screen and (max-width: 999px) and (min-width: 851px) {
+        .video-dimensions {
+        width: 100%;
+        height: 315px;
+        }
+        }
+
+        @media screen and (max-width: 850px) and (min-width: 748px) {
+        .video-dimensions {
+        width: 100%;
+        height: 250px;
+        }
+        }
+
+        @media screen and (max-width: 747px) and (min-width: 632px) {
+
+        .video-dimensions {
+        width: 100%;
+        height: 250px;
+        }
+        }
+
+        @media screen and (max-width: 631px) and (min-width: 589px) {
+        .video-dimensions {
+        width: 100%;
+        height: 250px;
+        }
+        }
+
+        @media screen and (max-width: 588px) and (min-width: 400px) {
+
+        .video-dimensions {
+        width: 100%;
+        height: 250px;
+        }
+        }
+
+        @media screen and (max-width: 399px) and (min-width: 280px) {
+        .video-dimensions {
+        width: 100%;
+        height: 175px;
+        }
+        }
+    </style>
+
+</div>
+{% endblock %}
