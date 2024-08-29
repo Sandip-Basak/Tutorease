@@ -1,4 +1,4 @@
-<a href="https://tutorease.pythonanywhere.com" target="_blank">
+<a href="https://tutorease.pythonanywhere.com">
 <img align="center" width=100% src="https://raw.githubusercontent.com/Sandip-Basak/Tutorease/main/readme_images/logo.jpg" alt="App Logo">
 </a>
 <hr>
