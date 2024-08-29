@@ -44,5 +44,3 @@ Tutorease is an online support platform catering to coaching institutions, offer
 <img width=100% src="https://raw.githubusercontent.com/Sandip-Basak/Tutorease/main/readme_images/Screenshot%202024-08-29%20103906.jpg" alt="App Images">
 </div>
 <br>
-
-##
